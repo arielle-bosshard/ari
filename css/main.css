@@ -7,14 +7,14 @@
 .half-width {
     width: 600px;
     float: left;
-    padding: 0px auto;
+    padding: 0px;
     margin: 0px auto;
 }
 .third-width {
     width: 400px;
     float: left;
     margin: 0px auto;
-    padding: 0px auto;
+    padding: 0px;
 }
 
 /***** BASE STYLES *****/
@@ -37,6 +37,8 @@ h3 {
     font-weight: 300;
     font-size: 25px;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
     line-height: 0px;
 }
 h4 {
@@ -52,8 +54,24 @@ p {
 
 /***** HEADER *****/
 #title {
-    background: url('../img/giza.png');
+    background: url('../img/gizaa.png');
     height: 350px;
+}
+header #title h1 {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #1f202b;
+    line-height: 35px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+header #title img {
+    height: 100px;
+    padding-left: 550px;
+    padding-top: 77px; 
+    padding-bottom: 0px;
 }
 #menu {
     background: #ffffff;
@@ -68,19 +86,19 @@ p {
     overflow: auto;
 }
 #menu nav ul {
-    margin: 7px 30px;
+    margin: 10px 35px;
     padding: 0px;
 }
 #menu nav ul li {
     display: inline-block;
 }
 #menu nav ul li a {
-    font-family: 'Gudea', sans-serif;
-    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
     color: #1f202b;
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-decoration: none;
-    padding: 0px 10px;
+    padding: 0px 15px;
 }
 
 /***** MAIN *****/
@@ -88,9 +106,45 @@ p {
     clear: both;
 }
 /***** PORTFOLIO *****/
+#portfolio h2 {
+    padding-bottom: 15px;
+}
+#portfolio a {
+    text-decoration: none;
+}
 #portfolio img {
     height: 300px;
     margin: 15px;
+}
+#portfolio img:hover {
+    opacity: 0.5;
+}
+#portfolio .left-format {
+    text-align: right;
+    margin-right: 10px;
+}
+#portfolio .left-format h3 {
+    margin-top: 150px;
+}
+#portfolio .left-format p {
+    margin-bottom: 105px;
+    padding-left: 40px;
+}
+#portfolio .left-format .blogimg {
+    margin-bottom: 30px;
+}
+#portfolio .right-format {
+    margin-top: 75px;
+    margin-left: 10px;
+}
+#portfolio .right-format p {
+    padding-right: 100px;
+}
+#portfolio .right-format img {
+    margin-top: 100px;
+}
+#portfolio .right-format .blog {
+    margin-top: 135px;
 }
 /***** ABOUT *****/
 #about {
@@ -103,14 +157,41 @@ p {
     
 }
 /***** CONTACT *****/
+#contact h2 {
+    padding-bottom: 25px;
+}
+#contact form {
+    margin: 0px 0px 0px 30px;
+    line-height: 20px;
+}
 #contact ul li{
     line-height: 30px;
+}
+#contact ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+#contact .third-width h3#direct {
+    padding-left: 30px;
+}
+#contact .third-width h3#social {
+    padding-left: 50px;
+}
+#contact .third-width .social-ul {
+    padding-left: 180px;
+}
+#contact .third-width .address {
+    padding-left: 23px;
 }
 /***** FOOTER *****/
 footer {
     clear: both;
     text-align: center;
-    height: 40px;
+}
+footer .copyright {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px;
+    padding-top: 20px;
 }
 
 

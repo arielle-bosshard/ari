@@ -7,17 +7,20 @@
 .half-width {
     width: 600px;
     float: left;
-    padding: 0px auto;
+    padding: 0px;
     margin: 0px auto;
 }
 .third-width {
     width: 400px;
     float: left;
     margin: 0px auto;
-    padding: 0px auto;
+    padding: 0px;
 }
 
 /***** BASE STYLES *****/
+html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: 'PT Sans', sans-serif;
     color: #ffffff;
@@ -29,7 +32,7 @@ h2 {
     text-transform: lowercase;
     text-align: center;
     color: #eccc9c;
-    padding-top: 20px;
+    padding: 30px 0px;
     margin: 0px;
 }
 h3 {
@@ -37,6 +40,8 @@ h3 {
     font-weight: 300;
     font-size: 25px;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
     line-height: 0px;
 }
 h4 {
@@ -52,8 +57,24 @@ p {
 
 /***** HEADER *****/
 #title {
-    background: url('../img/giza.png');
+    background: url('../img/gizaa.png');
     height: 350px;
+}
+header #title h1 {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #1f202b;
+    line-height: 35px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+header #title img {
+    height: 100px;
+    padding-left: 550px;
+    padding-top: 77px; 
+    padding-bottom: 0px;
 }
 #menu {
     background: #ffffff;
@@ -68,19 +89,19 @@ p {
     overflow: auto;
 }
 #menu nav ul {
-    margin: 7px 30px;
+    margin: 10px 35px;
     padding: 0px;
 }
 #menu nav ul li {
     display: inline-block;
 }
 #menu nav ul li a {
-    font-family: 'Gudea', sans-serif;
-    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
     color: #1f202b;
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-decoration: none;
-    padding: 0px 10px;
+    padding: 0px 15px;
 }
 
 /***** MAIN *****/
@@ -88,9 +109,48 @@ p {
     clear: both;
 }
 /***** PORTFOLIO *****/
+#portfolio h2 {
+    padding-bottom: 15px;
+}
+#portfolio a {
+    text-decoration: none;
+}
 #portfolio img {
     height: 300px;
     margin: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.349);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.349);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.349);
+}
+#portfolio img:hover {
+    opacity: 0.5;
+}
+#portfolio .left-format {
+    text-align: right;
+    margin-right: 10px;
+}
+#portfolio .left-format h3 {
+    margin-top: 150px;
+}
+#portfolio .left-format p {
+    margin-bottom: 105px;
+    padding-left: 40px;
+}
+#portfolio .left-format .blogimg {
+    margin-bottom: 30px;
+}
+#portfolio .right-format {
+    margin-top: 75px;
+    margin-left: 10px;
+}
+#portfolio .right-format p {
+    padding-right: 100px;
+}
+#portfolio .right-format img {
+    margin-top: 100px;
+}
+#portfolio .right-format .blog {
+    margin-top: 135px;
 }
 /***** ABOUT *****/
 #about {
@@ -98,19 +158,102 @@ p {
     height: 300px;
 }
 #about p{
-    margin-left: 20px;
-    margin-right: 300px;
-    
+    margin: 0px 300px 0px 25px;
+    font-size: 17px;
 }
 /***** CONTACT *****/
+#contact h2 {
+    padding-bottom: 25px;
+}
+#contact .third-width h3#direct {
+    padding-left: 210px;
+}
+#contact .form-style-8{
+	font-family: 'PT Sans', sans-serif;
+	width: 400px;
+	padding: 10px 30px;
+	margin: 10px auto;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 textarea,
+.form-style-8 select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px 'PT Sans', sans-serif;
+	height: 45px;
+}
+.form-style-8 textarea{
+	resize:none;
+	overflow: hidden;
+}
+.form-style-8 input[type="button"], 
+.form-style-8 input[type="submit"]{
+	-moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background-color: #eaebeb;
+	border: 1px solid #c4c7c7;
+	display: inline-block;
+	cursor: pointer;
+	color: #1f202b;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+    padding: 8px 18px;
+    margin-left: 150px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.form-style-8 input[type="button"]:hover, 
+.form-style-8 input[type="submit"]:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #fefcfc 100%);
+	background-color:#ffffff;
+}
 #contact ul li{
     line-height: 30px;
+}
+#contact ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+#contact .third-width h3#social {
+    text-align: center;
+}
+#contact .third-width .social-ul {
+    padding-left: 180px;
+}
+#contact .third-width h3#connect {
+    padding-left: 140px;
+}
+#contact ul#address{
+    padding-left: 140px;
 }
 /***** FOOTER *****/
 footer {
     clear: both;
     text-align: center;
-    height: 40px;
+}
+footer .copyright {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px;
+    padding-top: 20px;
 }
 
 

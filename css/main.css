@@ -18,6 +18,9 @@
 }
 
 /***** BASE STYLES *****/
+html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: 'PT Sans', sans-serif;
     color: #ffffff;
@@ -115,9 +118,9 @@ header #title img {
 #portfolio img {
     height: 300px;
     margin: 15px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.349);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.349);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.349);
 }
 #portfolio img:hover {
     opacity: 0.5;
@@ -161,6 +164,9 @@ header #title img {
 /***** CONTACT *****/
 #contact h2 {
     padding-bottom: 25px;
+}
+#contact .third-width h3#direct {
+    padding-left: 210px;
 }
 #contact .form-style-8{
 	font-family: 'PT Sans', sans-serif;
@@ -220,16 +226,12 @@ header #title img {
 	background:linear-gradient(to bottom, #ffffff 5%, #fefcfc 100%);
 	background-color:#ffffff;
 }
-
 #contact ul li{
     line-height: 30px;
 }
 #contact ul li a {
     text-decoration: none;
     color: #ffffff;
-}
-#contact .third-width h3#direct {
-    padding-left: 210px;
 }
 #contact .third-width h3#social {
     text-align: center;
